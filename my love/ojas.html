@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Special</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #ffe6f2;
+        color: #ff4081;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: #ff4081;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Valentine's Day! ❤️</h1>
+    <nav>
+      <a href="love-letter.html">Love Letter</a>
+      <a href="memories.html">Memories</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="message.html">Your Message</a>
+    </nav>
+    <div class="container">
+      <h2>Welcome to Our Special Valentine's Day Website</h2>
+      <p>
+        Click on the links above to explore different sections dedicated to love
+        and our journey together.
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- love-letter.html -->
+
+<!-- playlist.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Playlist</title>
+  </head>
+  <body>
+    <h1>Our Love Playlist 🎵</h1>
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <a href="index.html">Back to Home</a>
+  </body>
+</html>
+
+<!-- message.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leave a Message</title>
+  </head>
+  <body>
+    <h1>Leave a Sweet Message 💬</h1>
+    <textarea
+      id="message"
+      rows="4"
+      cols="50"
+      placeholder="Write a message..."
+    ></textarea>
+    <button onclick="saveMessage()">Send</button>
+    <p id="displayMessage"></p>
+    <script>
+      function saveMessage() {
+        const message = document.getElementById("message").value;
+        document.getElementById(
+          "displayMessage"
+        ).innerText = `You said: "${message}"`;
+      }
+    </script>
+    <a href="index.html">Back to Home</a>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Love</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #ffe6f2;
+        color: #ff4081;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      .section {
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      .section:hover {
+        transform: scale(1.05);
+      }
+      .gallery img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 5px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+      .gallery img:hover {
+        transform: scale(1.2);
+      }
+      .countdown {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      button {
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #e6005c;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>For My Love ❤️</h1>
+
+    <div class="section">
+      <h2>A Love Letter 💌</h2>
+      <p>
+        My dearest love, Ojasvi...you are the light of my life and the reason my
+        heart beats. Every moment with you is a treasure, and I can't wait for
+        all the moments we will share. I love you more than words can express.
+        ❤️
+        <p>MY RABBIT 🐰💓</p> 
+      </p>
+    </div>
+
+    <div class="section gallery">
+      <h2>Our Beautiful Memories 📸</h2>
+      <img src="b5fa0302-27c8-476d-8941-f8eb329012fc.jpeg" alt="Memory 1" />
+      <img src="c2da764a-e31e-41bc-9c60-1b23701b6004.jpeg" alt="Memory 2" />
+      <img src="" alt="Memory 3" />
+    </div>
+
+    <div class="section">
+      <h2>Our Love Playlist 🎵</h2>
+      <p>Here are the songs that remind me of you:</p>
+      <ul>
+        <li>Song 1 - <a hreg="https://youtu.be/jIqRbFQl-ds">Humsafar</a></li>
+        
+        <li>Song 2 - <a hreg="https://youtu.be/3a-h9LsEHxc">Ishq</a></li>
+        <li>Song 3 - <a hreg="https://youtu.be/l5sgIqzlPXc">Maula mere</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Countdown to Our Special Day ⏳</h2>
+      <p class="countdown" id="countdown"></p>
+    </div>
+
+    <div class="section">
+      <h2>Leave a Sweet Message 💬</h2>
+      <textarea
+        id="message"
+        rows="4"
+        cols="50"
+        placeholder="Write a message..."
+      ></textarea>
+      <button onclick="saveMessage()">Send</button>
+      <p id="displayMessage"></p>
+    </div>
+
+    <script>
+      function countdownTimer() {
+        const eventDate = new Date("2025-02-14T00:00:00"); // Example: Valentine's Day
+        const now = new Date();
+        const diff = eventDate - now;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        document.getElementById("countdown").innerText = `${days} days left!`;
+      }
+      setInterval(countdownTimer, 1000);
+      countdownTimer();
+
+      function saveMessage() {
+        const message = document.getElementById("message").value;
+        if (message.trim() === "") {
+          alert("Please write a message before sending.");
+          return;
+        }
+        document.getElementById("displayMessage").innerHTML = `<strong>You said:</strong> "${message}"`;
+        document.getElementById("message").value = "";
+      }
+
+      function createHearts() {
+        const heart = document.createElement("div");
+        heart.innerHTML = "❤️";
+        heart.style.position = "fixed";
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.top = "-20px";
+        heart.style.fontSize = Math.random() * 20 + 20 + "px";
+        heart.style.opacity = Math.random();
+        heart.style.animation = "fall 4s linear infinite";
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 4000);
+      }
+      setInterval(createHearts, 500);
+
+      const style = document.createElement("style");
+      style.innerHTML = `
+        @keyframes fall {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(100vh); }
+        }
+      `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Special</title>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        background-color: #ffe6f2;
+        color: #ff4081;
+        margin: 0;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      nav {
+        padding: 10px;
+      }
+      nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background: #ff4081;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        background: #e6005c;
+      }
+      .gallery img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+      .song-list audio {
+        margin: 10px 0;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fall {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(100vh); opacity: 0; }
+      }
+      .heart {
+        position: absolute;
+        top: -10px;
+        color: red;
+        font-size: 20px;
+        animation: fall linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="fade-in">Happy Valentine's Day! ❤️</h1>
+    <nav>
+      <a href="love-letter.html">Love Letter</a>
+      <a href="memories.html">Memories</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="message.html">Your Message</a>
+    </nav>
+    <div class="container fade-in">
+      <h2>Welcome to Our Special Valentine's Day Website</h2>
+      <p>Click on the links above to explore different sections dedicated to love and our journey together.</p>
+    </div>
+    <script>
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.body.appendChild(heart);
+        setTimeout(() => {
+          heart.remove();
+        }, 5000);
+      }
+      setInterval(createHeart, 300);
+    </script>
+  </body>
+</html>
